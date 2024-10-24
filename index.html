@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Gonzalo García</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -22,14 +23,27 @@
         </ul>
     </nav>
 
-        <!-- Tarjeta de Perfil -->
+ <!-- Tarjeta de Perfil -->
 <section id="profile" class="profile-section">
     <div class="profile-card">
         <div class="profile-image">
             <img src="images/yoo.jpg" alt="Gonzalo García">
         </div>
-        <h2>Gonzalo García de la vega ojeda</h2>
+        <h2>Gonzalo García de la Vega Ojeda</h2>
         <p>Técnico superior en desarrollo web</p>
+        
+        <!-- Sección de íconos de contacto -->
+        <div class="contact-icons">
+            <a href="https://wa.me/1234567890" target="_blank" class="icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:tuemail@gmail.com" class="icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+1234567890" class="icon">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
     </div>
 </section>
 
@@ -37,8 +51,8 @@
     <section id="about" class="about-section">
         <div class="about-container">
             <h2>Sobre mi.</h2>
-            <p>Hola, soy Gonzalo García de la Vega Ojeda, un apasionado del desarrollo web con un enfoque en crear experiencias digitales efectivas y atractivas. Graduado como Técnico Superior en Desarrollo de Aplicaciones Web, he adquirido habilidades sólidas en tecnologías como JavaScript, HTML, CSS y PHP, así como en el uso de frameworks modernos.</p>
-            <p>Si estás interesado en colaborar o aprender más sobre mí, no dudes en ponerte en contacto. Estoy emocionado por las oportunidades futuras y por contribuir a proyectos innovadores.</p>
+            <p>Hola, soy Gonzalo García de la Vega Ojeda, un apasionado del desarrollo web con un enfoque en crear experiencias digitales efectivas y atractivas. Graduado como Técnico Superior en Desarrollo de Aplicaciones Web, he adquirido habilidades sólidas en tecnologías como JavaScript, HTML, CSS y PHP, así como en el uso de frameworks modernos.
+            Si estás interesado en colaborar o aprender más sobre mí, no dudes en ponerte en contacto. Estoy emocionado por las oportunidades futuras y por contribuir a proyectos innovadores.</p>
         
             <div class="about-content">
                 <!-- Datos Personales -->
@@ -53,19 +67,35 @@
                 </div>
                 
                 <!-- Mis Intereses -->
-                <div class="interests">
-                    <h3>Mis Intereses</h3>
-                    <div class="interests-grid">
-                        <div class="interest-item">Juegos</div>
-                        <div class="interest-item">Música</div>
-                        <div class="interest-item">Viajar</div>
-                        <div class="interest-item">Mac OS</div>
-                        <div class="interest-item">Deporte</div>
-                        <div class="interest-item">Libros</div>
-                        <div class="interest-item">Autos</div>
-                        <div class="interest-item">Fotos</div>
-                    </div>
-                </div>
+             <div class="interests">
+              <h3>Mis Intereses</h3>
+                 <div class="interests-grid">
+                   <div class="interest-item">
+               <i class="fas fa-gamepad"></i> Juegos
+                 </div>
+                  <div class="interest-item">
+              <i class="fas fa-music"></i> Música
+              </div>
+              <div class="interest-item">
+              <i class="fas fa-plane"></i> Viajar
+          </div>
+          <div class="interest-item">
+                  <i class="fab fa-apple"></i> Mac OS
+              </div>
+              <div class="interest-item">
+                  <i class="fas fa-football-ball"></i> Deporte
+              </div>
+              <div class="interest-item">
+                  <i class="fas fa-book"></i> Libros
+                  </div>
+                  <div class="interest-item">
+            <i class="fas fa-car"></i> Autos
+              </div>
+             <div class="interest-item">
+              <i class="fas fa-camera"></i> Fotos
+        </div>
+    </div>
+</div>
             </div>
     
             <!-- Botón Descargar CV -->
@@ -230,19 +260,43 @@
     <!-- Sección Contacto -->
     <section id="contact" class="contact-section">
         <h2>Contacto</h2>
-        <div class="contact-info">
-            <p>Conde de Cifuentes, Sevilla</p>
-            <p>Teléfono: 639 04 67 05</p>
-            <p>Email: ggarcia@itpfp.com</p>
-        </div>
-        <!-- Mapa de Ubicación -->
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.4030505582237!2d-5.999566825305871!3d37.392529022597105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126bf8f7d16f7f%3A0x7fb8ae98b597d1d2!2sC.%20Conde%20de%20Cifuentes%2C%2041013%20Sevilla!5e0!3m2!1ses!2ses!4v1697790786020!5m2!1ses!2ses"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-container">
+            <!-- Formulario de Contacto -->
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/tu-form-id" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Mapa de Ubicación -->
+            <div class="contact-map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.702240869425!2d-6.006597784870364!3d37.388630879830144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126fe6a9c58cf9%3A0xcdd0b0743784d658!2sC.%20Conde%20de%20Cifuentes%2C%2041003%20Sevilla!5e0!3m2!1ses!2ses!4v1697208964591!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
+
 
     <!-- Pie de página -->
     <footer>
@@ -252,3 +306,5 @@
 </body>
 
 </html>
+
+
